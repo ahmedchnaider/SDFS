@@ -1,0 +1,201 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<title>Faculté de Droit et des Sciences Politiques de Sfax</title>
+<link rel="shortcut icon" href="../images/sig_fac.bmp" type="image/x-icon"/>
+
+<!-- Mirrored from www.fdsps.rnu.tn/fr/etudiant-interface1.php by HTTrack Website Copier/3.x [XR&CO'2014], Fri, 19 Apr 2024 22:07:44 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=UTF-8" /><!-- /Added by HTTrack -->
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<link  rel="stylesheet" href="../css/style-releve-note%20w3.css"  />
+<link rel="stylesheet" href="../css/menu-bar-smart-phone.css">
+<link rel="stylesheet" href="../../cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+
+td a { text-decoration: none; font-size:25px; font: "Times New Roman", Times, serif;   }
+td  { text-decoration: none; font-size:25px; font: "Times New Roman", Times, serif;   }
+body {font-family: "Lato", sans-serif}
+
+ a { text-decoration: none; font-size:18px; font: "Times New Roman", Times, serif; margin:6px   }
+.mySlides {display: none}
+
+
+.w2-table,.w2-table-all{width:100%;display:table; font-size:13px;}.w2-table-all{border:1px solid #ccc}
+.w2-bordered tr,.w2-table-all tr{border-bottom:1px solid #ddd}.w2-striped tbody tr:nth-child(even){background-color:#f1f1f1}
+.w2-table-all tr:nth-child(odd){background-color:#fff}.w2-table-all tr:nth-child(even){background-color:#f1f1f1}
+.w2-hoverable tbody tr:hover,.w2-ul.w2-hoverable li:hover{background-color:#ccc}.w2-centered tr th,.w2-centered tr td{text-align:center}
+.w2-table td,.w2-table th,.w2-table-all td,.w2-table-all th{padding:1px 1px;display:table-cell;text-align:left;vertical-align:top}
+.w2-table th:first-child,.w2-table td:first-child,.w2-table-all th:first-child,.w2-table-all td:first-child{padding-left:6px}
+
+
+
+.top-container1 {
+  /*background-color: #f1f1f1;*/
+  padding: 30px;
+  text-align: center;
+}
+
+.header1 {
+  padding: 10px 16px;
+  background: #555;
+  color: #f1f1f1;
+}
+
+.content1 {
+  padding: 16px;
+}
+
+.sticky1 {
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+.sticky1 + .content1 {
+  padding-top: 102px;
+}
+</style>
+</head>
+
+<body>
+<div class="top-container1">
+ 
+  <h1> <img src="../images/entete-fdsps1.png"class="w3-image w3-greyscale-min" style="width:30%"  > </h1>
+  
+</div>
+<a href="index.html">RETOUR</a>
+<div class="header1" >
+  <h1 align="center"> ESPACE &Eacute;TUDIANTS</h1>
+</div>
+
+
+<!-- Page content -->
+<div class="w3-content" style="max-width:2000px;margin-top:46px">
+
+ 
+<!--  interface etudiant--> 
+<div class="w3-container w3-content w3-padding-64" style="max-width:800px; alignment-adjust:baseline; " id="doc" >
+
+  <form name="form5" action="espaceetudiantgenerale.html">
+
+ 
+
+
+                <p>VEUILLEZ VOUS IDENTIFIER AVEC VOTRE MOT DE PASSE :</p>
+                <p>Pour consulter vos Notes,Absences,Cours/TD,Emplois de temps et Calendriers des examens en ligne, vous pouvez vous identifier par votre mot de passe</p>
+      
+
+          <div class="w3-row-padding" style="margin:0 -16px 8px -16px">
+          <div class="w3-half">
+            <input class="w3-input w3-border" name="mat"  id="mat" value="" placeholder="CIN" required name="CIN" >
+            <input type="password" class="w3-input w3-border" name="mat1"  id="mat1" value="" placeholder="Mot de passe" required name="Mot de passe">
+          </div>
+         </div>
+         
+
+         <div> <input class="w3-button w3-black w3-section w3-right" type="submit"  value="VALIDER" onclick="redirectToStudentNote()" ></div>
+          
+         <div> <a href="inscription.html">INSCRIPTION</a></div>
+          
+       
+          
+         
+   
+</form>
+ 
+ 
+ 
+
+</div>   
+<!-- Fin interface etudiant-->   
+  
+ 
+  
+  
+  
+
+ 
+<!-- End Page Content -->
+</div>
+
+
+
+
+<!-- Image of location/map -->
+
+
+<!--<img src="../images/faculte11.jpg" class="w3-image w3-greyscale-min" >-->
+
+
+
+
+
+<!-- Footer -->
+<footer class="w3-container w3-padding-64 w3-center w3-opacity w3-light-grey w3-xlarge">
+<p class="w3-medium">&copy; TAHA HAMED</p>
+</footer>
+
+<script>
+
+function redirectToStudentNote() {
+    window.location.href = "espaceetudiantgenerale.html";
+}
+
+
+
+
+// Automatic Slideshow - change image every 4 seconds
+var myIndex = 0;
+carousel();
+
+function carousel() {
+  var i;
+  var x = document.getElementsByClassName("mySlides");
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";  
+  }
+  myIndex++;
+  if (myIndex > x.length) {myIndex = 1}    
+  x[myIndex-1].style.display = "block";  
+  setTimeout(carousel, 4000);    
+}
+
+// Used to toggle the menu on small screens when clicking on the menu button
+function myFunction() {
+  var x = document.getElementById("navDemo");
+  if (x.className.indexOf("w3-show") == -1) {
+    x.className += " w3-show";
+  } else { 
+    x.className = x.className.replace(" w3-show", "");
+  }
+}
+
+// When the user clicks anywhere outside of the modal, close it
+var modal = document.getElementById('ticketModal');
+window.onclick = function(event) {
+  if (event.target == modal) {
+    modal.style.display = "none";
+  }
+}
+</script>
+<!--
+<script>
+window.onscroll = function() {myFunction()};
+
+var header = document.getElementById("myHeader");
+var sticky = header.offsetTop;
+
+function myFunction() {
+  if (window.pageYOffset > sticky) {
+    header.classList.add("sticky1");
+  } else {
+    header.classList.remove("sticky1");
+  }
+}
+</script>-->
+</body>
+
+<!-- Mirrored from www.fdsps.rnu.tn/fr/etudiant-interface1.php by HTTrack Website Copier/3.x [XR&CO'2014], Fri, 19 Apr 2024 22:07:45 GMT -->
+</html>
